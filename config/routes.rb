@@ -1,4 +1,13 @@
 Ninetab::Application.routes.draw do
+
+  filter :locale
+
+  match '/specification' => 'static_pages#specification'
+  match '/contact'       => 'static_pages#contact'
+
+  root to: 'static_pages#home'
+  
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

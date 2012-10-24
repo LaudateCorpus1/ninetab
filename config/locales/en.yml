@@ -2,4 +2,9 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  NAV_HOME: 'HOME'
+  NAV_CONTACT: 'CONTACT'
+  NAV_SPECIFICATION: 'TECHNICAL SPECIFICATIONS'
+  
+  HEADER_CONTACT: 'Contact'
+  HEADER_SPECIFICATION: 'Technical specifications'

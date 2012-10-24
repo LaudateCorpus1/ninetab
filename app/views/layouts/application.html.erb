@@ -1,14 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Ninetab</title>
+  <title><%= full_title(yield :title) %></title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+<%= render 'layouts/shim' %>
 </head>
 <body>
 
-<%= yield %>
+  <header>
+    <div id="top-container">
+      <%= image_tag 'logo.png', id: 'logo', alt: 'logo' %>
+      <nav>
+        <ul>
+          <li><%= link_to t(:NAV_HOME), root_path, link_class('home') %></li>
+          <li>KDE KOUPIT</li>
+          <li><%= link_to t(:NAV_SPECIFICATION), specification_path, link_class('specification') %></li>
+          <li><%= link_to t(:NAV_CONTACT), contact_path, link_class('contact') %></li>
+          <li>VIDEO</li>
+          <li>PRISLUSENSTVI</li>
+        </ul>
+      </nav>
+      <div id="main-pic"><div id="arrow_left"></div><div id="arrow_right"></div></div>
+      <div id="en"><%= link_to 'EN', root_path(locale: 'en') %></div><div id="cz"><%= link_to 'CZ', root_path(locale: '') %></div>
+    </div>      
+  </header>
 
+  <div id="main-content">
+<%= yield %>
+  </div>
+
+<%= render 'layouts/footer' %>
+
+<%= debug(params) if Rails.env == 'development' %>
 </body>
 </html>
