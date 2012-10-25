@@ -9,27 +9,29 @@
 </head>
 <body>
 
+<% if params[:action] == 'home' %>
   <header>
-    <div id="top-container">
-      <%= image_tag 'logo.png', id: 'logo', alt: 'logo' %>
-      <nav>
-        <ul>
-          <li><%= link_to t(:NAV_HOME), root_path, link_class('home') %></li>
-          <li><strike>KDE KOUPIT</strike></li>
-          <li><%= link_to t(:NAV_SPECIFICATION), specification_path, link_class('specification') %></li>
-          <li><%= link_to t(:NAV_CONTACT), contact_path, link_class('contact') %></li>
-          <li><strike>VIDEO</strike></li>
-          <li><strike>PRISLUSENSTVI</strike></li>
-        </ul>
-      </nav>
+    <div id="homepage-top-container">
+      <%= render 'layouts/navigation' %>
       <div id="main-pic"><div id="arrow_left"></div><div id="arrow_right"></div></div>
-      <div id="en"><%= link_to 'EN', root_path(locale: 'en') %></div><div id="cz"><%= link_to 'CZ', root_path(locale: '') %></div>
+      <div id="en">&nbsp;<%= link_to 'EN', root_path(locale: '') %></div><div id="cz">&nbsp;<%= link_to 'CZ', root_path(locale: 'cz') %></div>
     </div>      
   </header>
+<%= yield %>
 
-  <div id="main-content">
+<% else %>
+  <header>
+    <div id="top-container">
+      <%= render 'layouts/navigation' %>
+      <div id="top-filling"></div>
+      <div id="en">&nbsp;<%= link_to 'EN', root_path(locale: '') %></div><div id="cz">&nbsp;<%= link_to 'CZ', root_path(locale: 'cz') %></div>
+    </div>
+ </header>
+
+  <div id="page-content">
 <%= yield %>
   </div>
+<% end %>
 
 <%= render 'layouts/footer' %>
 
