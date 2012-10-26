@@ -3,7 +3,18 @@
 <head>
   <title><%= full_title(yield :title) %></title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
+  <link href='http://fonts.googleapis.com/css?family=Titillium+Web:300,800&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
   <%= javascript_include_tag "application" %>
+
+<script type="text/javascript">
+  $(window).load(function() {
+    $('.flexslider').flexslider({
+      directionNav: true,
+      prevText: '',
+      nextText: ''
+    });
+  });
+</script>  
   <%= csrf_meta_tags %>
 <%= render 'layouts/shim' %>
 </head>
@@ -13,8 +24,23 @@
   <header>
     <div id="homepage-top-container">
       <%= render 'layouts/navigation' %>
-      <div id="main-pic"><div id="arrow_left"></div><div id="arrow_right"></div></div>
-      <div id="en">&nbsp;<%= link_to 'EN', root_path(locale: '') %></div><div id="cz">&nbsp;<%= link_to 'CZ', root_path(locale: 'cz') %></div>
+      <div id="main-pic" class="flexslider">
+        <ul class="slides">
+          <li>
+            <%= image_tag 'tablet.jpg', alt: '' %>
+            <div class="slide-caption">
+              <h1>TABLET E8</h1>
+              <p><%= t(:SLIDE1) %></p>
+            </div>
+          </li>
+          <li>
+            <%= image_tag 'tablet.jpg', alt: '' %>
+          </li>
+          <li>
+            <%= image_tag 'tablet.jpg', alt: '' %>
+          </li>
+        </ul>
+      <div id="en">&nbsp;<%= link_to 'EN', '/en' %></div><div id="cz">&nbsp;<%= link_to 'CZ', '/cs' %></div>
     </div>      
   </header>
 <%= yield %>
@@ -24,7 +50,7 @@
     <div id="top-container">
       <%= render 'layouts/navigation' %>
       <div id="top-filling"></div>
-      <div id="en">&nbsp;<%= link_to 'EN', root_path(locale: '') %></div><div id="cz">&nbsp;<%= link_to 'CZ', root_path(locale: 'cz') %></div>
+      <div id="en">&nbsp;<%= link_to 'EN', '/en' %></div><div id="cz">&nbsp;<%= link_to 'CZ', '/cs' %></div>
     </div>
  </header>
 

@@ -1,11 +1,9 @@
       <%= image_tag 'logo.png', id: 'logo', alt: 'logo' %>
       <nav>
         <ul>
-          <li><%= link_to t(:NAV_HOME), root_path, link_class('home') %></li>
-          <li><strike>KDE KOUPIT</strike></li>
+          <li><%= link_to t(:NAV_HOME), "/#{I18n.locale}", link_class('home') %></li>
+          <li><%= link_to t(:NAV_DESCRIPTION), description_path, link_class('description') %></li>
           <li><%= link_to t(:NAV_SPECIFICATION), specification_path, link_class('specification') %></li>
           <li><%= link_to t(:NAV_CONTACT), contact_path, link_class('contact') %></li>
-          <li><strike>VIDEO</strike></li>
-          <li><strike>PRISLUSENSTVI</strike></li>
         </ul>
       </nav>

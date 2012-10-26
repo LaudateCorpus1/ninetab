@@ -1,11 +1,15 @@
 
-cz:
+cs:
   NAV_HOME: 'ÚVOD'
-  NAV_CONTACT: 'KONTAKT'
+  NAV_DESCRIPTION: 'POPIS'
   NAV_SPECIFICATION: 'TECHNICKÉ SPECIFIKACE'
+  NAV_CONTACT: 'KONTAKT'
 
+  HEADER_DESCRIPTION: 'Popis'
   HEADER_CONTACT: 'Kontakt'
   HEADER_SPECIFICATION: 'Technické specifikace'
+
+  SLIDE1: 'RADOST POUŽÍVAT'
 
   H_RESOLUTION: 'Rozlišení'
   C_RESOLUTION: 'Displej se skvělým rozlišením 1280x768 vám zobrazí webové stránky v plné velikosti a poskytne dostatek místa pro virtuální klávesnici.'

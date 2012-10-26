@@ -3,8 +3,29 @@
 
 en:
   NAV_HOME: 'HOME'
-  NAV_CONTACT: 'CONTACT'
+  NAV_DESCRIPTION: 'DESCRIPTION'  
   NAV_SPECIFICATION: 'TECHNICAL SPECIFICATIONS'
+  NAV_CONTACT: 'CONTACT'
   
+  HEADER_DESCRIPTION: 'Description'
   HEADER_CONTACT: 'Contact'
   HEADER_SPECIFICATION: 'Technical specifications'
+
+  SLIDE1: 'A JOY TO USE'
+
+  H_RESOLUTION: 'Resolution'
+  C_RESOLUTION: 'Display with great resolution 1280x768 shows websites in their full size providing enough space for the virtual keyboard.'
+
+  C_WIFI: 'Integrated WiFi provides easy connection to the Internet. Current standards 802.11 b/g/n are available.'
+
+  C_MICRO_SD: 'The tablet provides a micro SD/SDHC slot, which allows for easy extension and cheap storage space for up to an additional 32GB.'
+
+  C_USB: 'In addition to connection to the PC, you can use the USB port to connect USB flash memory, a mouse, or other USB devices of your choice.'
+
+  H_SLIM: 'Thin design'
+  C_SLIM: "Thanks to the tablet's design the ultrathin body (only 10 mm) is both elegant and practical for your everyday use."
+
+  H_HDMI: 'HDMI'
+  C_HDMI: 'Want to share your experiences with others? Simply connect the tablet to a TV or LCD monitor and view your photos or videos with ease!'
+
+  H_IMPRESSIONS: 'Impressions'

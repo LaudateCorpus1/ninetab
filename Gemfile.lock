@@ -79,8 +79,6 @@ GEM
     rake (0.9.2.2)
     rdoc (3.12)
       json (~> 1.4)
-    routing-filter (0.3.1)
-      actionpack
     sass (3.2.1)
     sass-rails (3.2.5)
       railties (~> 3.2.0)
@@ -107,6 +105,5 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   jquery-rails
   rails (= 3.2.8)
-  routing-filter
   sass-rails (~> 3.2.3)
   uglifier (>= 1.0.3)

@@ -21,7 +21,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
-gem 'routing-filter'
+#gem 'routing-filter'
 
 
 # To use ActiveModel has_secure_password
