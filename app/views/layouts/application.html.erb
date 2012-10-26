@@ -24,22 +24,37 @@
   <header>
     <div id="homepage-top-container">
       <%= render 'layouts/navigation' %>
+      <div id="top-filling"></div>
       <div id="main-pic" class="flexslider">
         <ul class="slides">
           <li>
-            <%= image_tag 'tablet.jpg', alt: '' %>
+            <%= image_tag 'tablet1.jpg', alt: '' %>
             <div class="slide-caption">
               <h1>TABLET E8</h1>
               <p><%= t(:SLIDE1) %></p>
             </div>
           </li>
           <li>
-            <%= image_tag 'tablet.jpg', alt: '' %>
+            <%= image_tag 'tablet2.jpg', alt: '' %>
           </li>
           <li>
-            <%= image_tag 'tablet.jpg', alt: '' %>
+            <%= image_tag 'tablet3.jpg', alt: '' %>
+          </li>
+          <li>
+            <%= image_tag 'tablet4.jpg', alt: '' %>
+            <div class="slide-caption">
+              <h1>TABLET E8</h1>
+              <p><%= t(:SLIDE1) %></p>
+            </div>
+          </li>
+          <li>
+            <%= image_tag 'tablet5.jpg', alt: '' %>
+          </li>
+          <li>
+            <%= image_tag 'tablet6.jpg', alt: '' %>
           </li>
         </ul>
+      </div>  
       <div id="en">&nbsp;<%= link_to 'EN', '/en' %></div><div id="cz">&nbsp;<%= link_to 'CZ', '/cs' %></div>
     </div>      
   </header>

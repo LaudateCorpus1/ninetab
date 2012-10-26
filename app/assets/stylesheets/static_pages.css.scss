@@ -16,7 +16,7 @@ div#homepage-top-container {
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
-	width: 1046px;
+	width: 1040px;
 	height: 675px;
 	color: white;
 }
@@ -25,18 +25,20 @@ div#en {
 	position: absolute;
 	width: 28px;
 	height: 50px;
-	right: -23px;
+	right: -28px;
 	top: 290px;
 	background-color: #009DE0;
+	z-index: 1;
 }
 
 div#cz {
   position: absolute;
   width: 28px;
   height: 50px;
-  right: -23px;
+  right: -28px;
   top: 230px;
   background-color: #009DE0;
+  z-index: 1;
 }
 
 img#logo {
@@ -66,7 +68,7 @@ header {
 	}
 }
 
-header ul {
+header nav ul {
 	float: right;
 	margin-right: 30px;
 	list-style: none;	
@@ -78,25 +80,37 @@ header ul {
 	}
 }
 
-header ul > li:first-child {
+header nav ul > li:first-child {
 	border: none;
 }
 
 div#main-pic {
-	width: 1046px;
-	height: 538px;
+	width: 1040px;
+	height: 531px;
 	position: absolute;
+	z-index: 6;
 	left: 50%;
 	top: 130px;
-	margin-left: -521px;
-//	background-image: image-url('tablet.jpg');
+	margin-left: -519px;
+}
+div#homepage-top-container {
+	div#top-filling {
+		width: 1040px;
+		height: 531px - 54px;
+		position: absolute;
+		z-index: 2;
+		left: 50%;
+		top: 184px;
+		margin-left: -520px;
+box-shadow: 4px 4px 3px #BBB;	
+	}
 }
 /*************************/
 div#top-container {
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
-	width: 1046px;
+	width: 1040px;
 	height: 130px;
 	color: white;
 	div#top-filling {
@@ -109,20 +123,13 @@ div#top-container {
 		background-color: white;
 	}
 }
-/*div#page-container {
-	margin-left: auto;
-	margin-right: auto;
-	position: relative;
-	width: 1046px;	
-	position: relative;
-	background-color: white;
-}
-*/
+
 div#page-content {
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
-	width: 1040px;	
+	width: 1040px;
+	margin-top: -5px; // kvuli posunu stinu
 	padding: 40px 20px 30px 20px;
 	background-color: white;
 	color: #777;
@@ -133,97 +140,67 @@ box-shadow: 4px 4px 3px #BBB;
 		color: #009DDF;
 	}
 }
+
 .flex-slider {
-	position: relative;
+//	position: relative;
 	ul.slides li img {
-		position: relative;
+//		position: relative;
 	}
 }
+
 div.slide-caption {
-		margin-top: -200px;
-		margin-left: 40px;
-		position: absolute;
-		line-height: 1;
-		font-family: "Titillium Web", Arial, serif;
-		color: white;
+	margin-top: -200px;
+	margin-left: 40px;
+	position: absolute;
+	line-height: 1;
+	font-family: "Titillium Web", Arial, serif;
+	color: white;
 background: rgba(0,157,233,0.7);
-		h1 {			
-			font-weight: 800;
-			font-size: 48px;
+	h1 {			
+		font-weight: 800;
+		font-size: 48px;
 //			background-color: #45A7D1;
-			margin: 0;
-			padding: 14px;
-		}
-		p {			
-			margin: 0;
-			font-weight: 300;
-			font-size: 32px;
+		margin: 0;
+		padding: 14px;
+	}
+	p {			
+		margin: 0;
+		font-weight: 300;
+		font-size: 32px;
 //			span {
-				padding: 16px;
-				padding-top: 0;
+			padding: 16px;
+			padding-top: 0;
 //				background-color: #45A7D1;
 //			}			
-		}
 	}
+}
+
 .flex-control-paging li a:hover { background: #333; background: rgba(0,157,233,0.5); }
+
 .flex-control-paging li a.flex-active	 { background: rgba(0,157,233,0.8); }
-.flex-direction-nav .flex-prev
- {
+
+.flex-direction-nav .flex-prev {
 	display: block;
 	position: absolute;
+	z-index: 1;
 	right: 100px;
 	bottom: 50px;
-	height: 40px;
-	width: 40px;
+	height: 42px;
+	width: 42px;
 	background-image: image-url('arrow_left.png');
 }
+
 .flex-direction-nav .flex-next {
 	display: block;
 	position: absolute;
+	z-index: 1;
 	right: 50px;
 	bottom: 50px;
-	height: 40px;
-	width: 40px;
-	background-image: image-url('arrow_right.png');
-}
-a#arrow_left {
-	display: block;
-	position: absolute;
-	right: 100px;
-	bottom: 50px;
-	height: 40px;
-	width: 40px;
-	background-image: image-url('arrow_left.png');
-}
-
-a#arrow_right {
-	display: block;
-	position: absolute;
-	right: 50px;
-	bottom: 50px;
-	height: 40px;
-	width: 40px;
+	height: 42px;
+	width: 42px;
 	background-image: image-url('arrow_right.png');
 }
 /*************************/
-/*div#arrow_left {
-	position: absolute;
-	right: 100px;
-	bottom: 50px;
-	height: 40px;
-	width: 40px;
-	background-image: image-url('arrow_left.png');
-}
-
-div#arrow_right {
-	position: absolute;
-	right: 50px;
-	bottom: 50px;
-	height: 40px;
-	width: 40px;
-	background-image: image-url('arrow_right.png');
-}
-*/
 div#homepage-content {
 	margin-left: auto;
 	margin-right: auto;
