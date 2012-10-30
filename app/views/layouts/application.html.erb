@@ -3,7 +3,7 @@
 <head>
   <title><%= full_title(yield :title) %></title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
-  <link href='http://fonts.googleapis.com/css?family=Titillium+Web:300,800&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Titillium+Web:200,600&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
   <%= javascript_include_tag "application" %>
 
 <script type="text/javascript">
@@ -30,32 +30,48 @@
           <li>
             <%= image_tag 'tablet1.jpg', alt: '' %>
             <div class="slide-caption">
-              <h1>TABLET E8</h1>
+              <h1><span>TABLET E8</span></h1>
               <p><%= t(:SLIDE1) %></p>
             </div>
           </li>
           <li>
             <%= image_tag 'tablet2.jpg', alt: '' %>
+            <div class="slide-caption">
+              <h1><span>TABLET E8</span></h1>
+              <p><%= t(:SLIDE1) %></p>
+            </div>
           </li>
           <li>
-            <%= image_tag 'tablet3.jpg', alt: '' %>
+            <%= image_tag 'tablet6.jpg', alt: '' %>
+            <div class="slide-caption">
+              <h1><span>TABLET E8</span></h1>
+              <p><%= t(:SLIDE1) %></p>
+            </div>
           </li>
           <li>
             <%= image_tag 'tablet4.jpg', alt: '' %>
             <div class="slide-caption">
-              <h1>TABLET E8</h1>
+              <h1><span>TABLET E8</span></h1>
               <p><%= t(:SLIDE1) %></p>
             </div>
           </li>
           <li>
             <%= image_tag 'tablet5.jpg', alt: '' %>
+            <div class="slide-caption">
+              <h1><span>TABLET E8</span></h1>
+              <p><%= t(:SLIDE1) %></p>
+            </div>
           </li>
           <li>
-            <%= image_tag 'tablet6.jpg', alt: '' %>
+            <%= image_tag 'tablet3.jpg', alt: '' %>
+            <div class="slide-caption">
+              <h1><span>TABLET E8</span></h1>
+              <p><%= t(:SLIDE1) %></p>
+            </div>
           </li>
         </ul>
       </div>  
-      <div id="en">&nbsp;<%= link_to 'EN', '/en' %></div><div id="cz">&nbsp;<%= link_to 'CZ', '/cs' %></div>
+      <div id="en"><%= link_to '', '/en' %></div><div id="cz"><%= link_to '', '/cs' %></div>
     </div>      
   </header>
 <%= yield %>
@@ -65,7 +81,7 @@
     <div id="top-container">
       <%= render 'layouts/navigation' %>
       <div id="top-filling"></div>
-      <div id="en">&nbsp;<%= link_to 'EN', '/en' %></div><div id="cz">&nbsp;<%= link_to 'CZ', '/cs' %></div>
+      <div id="en"><%= link_to '', '/en' %></div><div id="cz"><%= link_to '', '/cs' %></div>
     </div>
  </header>
 
