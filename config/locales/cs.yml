@@ -27,3 +27,15 @@ cs:
   C_HDMI: 'Chcete se o své zážitky podělit s ostatními – jednoduše připojte tablet k televizi nebo LCD displeji a prohlížejte si fotky nebo svá videa.'
 
   H_IMPRESSIONS: 'Dojmy'
+
+  FORM_SUBJECT: 'Předmět:'
+  FORM_MESSAGE: 'Vaše zpráva:'
+  FORM_EMAIL: 'Email:'
+  SEND_MESSAGE_BUTTON: 'Odeslat zprávu'
+  ALERT_MESSAGE_BLANK: 'Vyplňte, prosím, pole zpráva'
+  ALERT_EMAIL_BLANK: 'Vyplňte, prosím, svoji emailovou adresu'
+
+
+  MAIL_SUBJECT: 'Zpráva z webu ninetab.com'
+  MAIL_SUCCESS: 'Vaše zpráva byla odeslána'
+  MAIL_ERROR: 'Zprávu se nepodařilo odeslat'

@@ -29,3 +29,14 @@ en:
   C_HDMI: 'Want to share your experiences with others? Simply connect the tablet to a TV or LCD monitor and view your photos or videos with ease!'
 
   H_IMPRESSIONS: 'Impressions'
+
+  FORM_SUBJECT: 'Subject:'
+  FORM_MESSAGE: 'Your message:'
+  FORM_EMAIL: 'Email:'
+  SEND_MESSAGE_BUTTON: 'Send message'
+  ALERT_MESSAGE_BLANK: 'Fill in your message, please'
+  ALERT_EMAIL_BLANK: 'Fill in your email address, please'
+
+  MAIL_SUBJECT: 'Zpráva z webu ninetab.com'
+  MAIL_SUCCESS: 'Your message was succesfully sent'
+  MAIL_ERROR: 'Error: your message was not send'

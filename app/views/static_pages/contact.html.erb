@@ -1,4 +1,19 @@
 <% provide :title, t(:HEADER_CONTACT) %>
 <h1><%= t :HEADER_CONTACT %></h1>
 
-<br /><br /><br /><br /><br /><br /><br />
+<% flash.each do |key, value| %>
+<div class="<%= "flash-#{key}" %>"><%= value %></div>
+<% end %>
+
+<%= form_tag contact_path, method: :post do %>
+    <%= label_tag :subject, t(:FORM_SUBJECT) %>
+    <%= text_field_tag :subject, params[:subject] %>
+
+    <%= label_tag :email, t(:FORM_EMAIL) %>
+    <%= text_field_tag :email, params[:email] %>
+
+    <%= label_tag :message, t(:FORM_MESSAGE) %>
+    <%= text_area_tag :message, params[:message] %>
+
+    <%= submit_tag t(:SEND_MESSAGE_BUTTON) %>
+<% end %>
