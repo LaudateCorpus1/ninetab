@@ -2,7 +2,7 @@ var jQueryFormLang = {
     errorTitle : 'Formulář obsahuje chyby!',
     requiredFields : 'Nejsou vyplněna všechna povinná pole',
 //    badTime : 'You have not given a correct time',
-    badEmail : 'E-mailová nemá platný formát',
+    badEmail : 'E-mailová adresa nemá platný formát',
 /*    badTelephone : 'You have not given a correct phone number',
     badSecurityAnswer : 'You have not given a correct answer to the security question',
     badDate : 'You have not given a correct date',

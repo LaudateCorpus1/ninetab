@@ -36,7 +36,8 @@ en:
   SEND_MESSAGE_BUTTON: 'Send message'
   ALERT_MESSAGE_BLANK: 'Fill in your message, please'
   ALERT_EMAIL_BLANK: 'Fill in your email address, please'
-
+  ALERT_EMAIL_FORMAT: 'You have not given a correct e-mail address'
+  
   MAIL_SUBJECT: 'Zpráva z webu ninetab.com'
   MAIL_SUCCESS: 'Your message was succesfully sent'
   MAIL_ERROR: 'Error: your message was not send'

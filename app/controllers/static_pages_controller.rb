@@ -1,4 +1,7 @@
 class StaticPagesController < ApplicationController
+
+  VALID_EMAIL_REGEX = /^[\w+\-.]+@[a-z\d\-.]+\.[a-z]+$/i
+
   def home
   end
 
@@ -8,10 +11,13 @@ class StaticPagesController < ApplicationController
   def specification
   end
 
-  def contact
+  def contact  
     if request.request_method_symbol == :post
       if params[:email].blank?
         flash[:alert] = t(:ALERT_EMAIL_BLANK)
+        return
+      elsif params[:email] !~ VALID_EMAIL_REGEX
+        flash[:alert] = t(:ALERT_EMAIL_FORMAT)
         return
       elsif params[:message].blank?
         flash[:alert] = t(:ALERT_MESSAGE_BLANK)

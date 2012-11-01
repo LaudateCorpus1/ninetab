@@ -34,7 +34,7 @@ cs:
   SEND_MESSAGE_BUTTON: 'Odeslat zprávu'
   ALERT_MESSAGE_BLANK: 'Vyplňte, prosím, pole zpráva'
   ALERT_EMAIL_BLANK: 'Vyplňte, prosím, svoji emailovou adresu'
-
+  ALERT_EMAIL_FORMAT: 'E-mailová adresa nemá platný formát'
 
   MAIL_SUBJECT: 'Zpráva z webu ninetab.com'
   MAIL_SUCCESS: 'Vaše zpráva byla odeslána'
