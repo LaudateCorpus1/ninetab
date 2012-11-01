@@ -1,6 +1,6 @@
 $(document).ready(function() {  
   $('.flexslider').flexslider({
-    directionNav: true,
+    slideshow: false,
     prevText: '',
     nextText: ''
   });

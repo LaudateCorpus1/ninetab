@@ -169,14 +169,14 @@ div#page-content {
 }
 
 div.slide-caption {
-	margin-top: -204px;
+	margin-top: -250px;
 	margin-left: 40px;
 	position: absolute;
 	font-family: "Titillium Web", Arial, serif;
 	color: white;
 	h1 {
 		font-weight: 600;
-		font-size: 52px;
+		font-size: 48px;
 		margin: 0;
 		padding: 0;
 		span {
@@ -187,7 +187,7 @@ div.slide-caption {
 	p {			
 		margin: 0;
 		font-weight: 200;
-		font-size: 50px;
+		font-size: 44px;
 		padding: 0 15px 0 15px;
 		background: rgba(0,157,233,0.7);
 	}
@@ -344,14 +344,20 @@ textarea {
 	border: 1px solid #CCCCCC;
 	border-radius: 3px 3px 3px 3px;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
 	transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
 	&:focus {
 		border-color: #009DDF;
 		box-shadow: 0 0 8px rgba(82, 168, 236, 0.3);
+		-webkit-box-shadow: 0 0 8px rgba(82, 168, 236, 0.3);
+		-moz-box-shadow: 0 0 8px rgba(82, 168, 236, 0.3);
 	}
 	&.error:focus {
 		border-color: #009DDF;
 		box-shadow: 0 0 8px rgba(255, 0, 0, 0.3);
+		-webkit-box-shadow: 0 0 8px rgba(255, 0, 0, 0.3);
+		-moz-box-shadow: 0 0 8px rgba(255, 0, 0, 0.3);
 	}
 }
 
