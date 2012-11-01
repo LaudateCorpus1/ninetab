@@ -23,7 +23,7 @@ class StaticPagesController < ApplicationController
         flash[:notice] = t(:MAIL_SUCCESS)
         redirect_to contact_path
       rescue
-        flash[:alert] = t(:MAIL_ERORR)
+        flash[:alert] = t(:MAIL_ERROR)
       end
     end
   end

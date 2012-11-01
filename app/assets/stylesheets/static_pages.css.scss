@@ -61,7 +61,7 @@ div#en {
 	width: 34px;
 	height: 52px;
 	right: -32px;
-	top: 290px;
+	top: 220px;
 	background-image: image-url('en.png');
 	z-index: 1;
 }
@@ -71,7 +71,7 @@ div#cz {
   width: 34px;
   height: 52px;
   right: -32px;
-  top: 220px;
+  top: 290px;
 	background-image: image-url('cz.png');
   z-index: 1;
 }
@@ -180,7 +180,7 @@ div.slide-caption {
 		margin: 0;
 		padding: 0;
 		span {
-			padding: 0 35px 0 14px;
+			padding: 0 15px 0 15px;
 			background: rgba(0,157,233,0.7);
 		}
 	}
@@ -188,7 +188,7 @@ div.slide-caption {
 		margin: 0;
 		font-weight: 200;
 		font-size: 50px;
-		padding: 0 30px 0 14px;
+		padding: 0 15px 0 15px;
 		background: rgba(0,157,233,0.7);
 	}
 }
@@ -256,14 +256,13 @@ div#homepage-content {
 
 	section.first-row {
 		float: left;
-		width: 240px;
-		margin: 20px 10px 0px 25px;
+		width: 244px;
+		margin: 20px 15px 0px 25px;
 	}
 
 	section.first-row-last {
 		float: right;
-		width: 190px;
-		margin: 20px 0 0 0;
+		margin: 20px 25px 0 0;
 		img {
 			display: block;
 			margin-bottom: 30px;
@@ -272,8 +271,8 @@ div#homepage-content {
 
 	section.second-row {
 		float: left;
-		width: 240px;
-		margin: 30px 10px 0px 25px;
+		width: 244px;
+		margin: 30px 15px 0px 25px;
 	}
 }
 
@@ -328,6 +327,7 @@ footer {
 
 label {
 	display: block;
+	margin-top: 20px;
 	margin-bottom: 5px;
 }
 
@@ -339,7 +339,6 @@ textarea {
 	font-size: 15px;
 	color: #777;
 	line-height: 18px;
-	margin-bottom: 20px;
 	padding: 6px;
 	background-color: #FFFFFF;
 	border: 1px solid #CCCCCC;
@@ -350,12 +349,16 @@ textarea {
 		border-color: #009DDF;
 		box-shadow: 0 0 8px rgba(82, 168, 236, 0.3);
 	}
+	&.error:focus {
+		border-color: #009DDF;
+		box-shadow: 0 0 8px rgba(255, 0, 0, 0.3);
+	}
 }
 
 input[type="submit"] {
 	display: block;
 	width: auto;
-	margin-top: 5px;
+	margin-top: 25px;
 	background-color: #0492D0;
 	color: white;
 	font-size: 16px;
@@ -369,8 +372,14 @@ textarea {
 	height: 200px;
 }
 
+label.required:after {
+	content: ' *';
+	color: #F17463;
+}
+
 div.flash-notice,
-div.flash-alert {
+div.flash-alert,
+div.jquery_form_error_message {
   border-radius: 4px 4px 4px 4px;
   margin-bottom: 20px;
   padding: 8px 35px 8px 14px;
@@ -378,14 +387,21 @@ div.flash-alert {
 	@include box_sizing;
 }
 
-div.flash-alert {
-    background-color: #F2DEDE;
-    border-color: #EED3D7;
-    color: #B94A48;
+div.flash-alert,
+div.jquery_form_error_message {
+  background-color: #F2DEDE;
+  border-color: #EED3D7;
+  color: #B94A48;
 }
 
 div.flash-notice {
-    background-color: #DFF0D8;
-    border-color: #D6E9C6;
-    color: #468847;
+  background-color: #DFF0D8;
+  border-color: #D6E9C6;
+  color: #468847;
+}
+
+span.jquery_form_error_message {
+  display: block;
+  margin-top: 3px;
+  color: #B94A48;
 }

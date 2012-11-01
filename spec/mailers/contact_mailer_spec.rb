@@ -42,5 +42,11 @@ describe ContactMailer do
     it 'assigns Email' do
       mail.body.encoded.should match('Email:   ' << params[:email])
     end
+
+    it 'sends email' do
+      ActionMailer::Base.deliveries = []      
+      mail.deliver
+      ActionMailer::Base.deliveries.last.from.should == ['test@example.com']
+    end
   end
 end

@@ -5,15 +5,15 @@
 <div class="<%= "flash-#{key}" %>"><%= value %></div>
 <% end %>
 
-<%= form_tag contact_path, method: :post do %>
-    <%= label_tag :subject, t(:FORM_SUBJECT) %>
-    <%= text_field_tag :subject, params[:subject] %>
+<%= form_tag contact_path, method: :post, id: 'contact-form'  do %>
+    <div><%= label_tag :subject, t(:FORM_SUBJECT) %>
+    <%= text_field_tag :subject, params[:subject] %></div>
 
-    <%= label_tag :email, t(:FORM_EMAIL) %>
-    <%= text_field_tag :email, params[:email] %>
-
-    <%= label_tag :message, t(:FORM_MESSAGE) %>
-    <%= text_area_tag :message, params[:message] %>
+    <div><%= label_tag :email, t(:FORM_EMAIL), class: :required %>
+    <%= text_field_tag :email, params[:email], 'data-validation' => 'validate_email' %>
+</div>
+    <div><%= label_tag :message, t(:FORM_MESSAGE), class: :required %>
+    <%= text_area_tag :message, params[:message], 'data-validation' => 'required' %></div>
 
     <%= submit_tag t(:SEND_MESSAGE_BUTTON) %>
 <% end %>
