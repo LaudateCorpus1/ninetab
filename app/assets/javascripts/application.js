@@ -14,5 +14,3 @@
 //= require jquery_ujs
 //= require_tree .
 //= require jquery.formvalidator.min.js
-//= require locale.en.js
-//= require locale.cs.js
