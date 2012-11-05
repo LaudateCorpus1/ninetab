@@ -6,14 +6,15 @@
 <% end %>
 
 <%= form_tag contact_path, method: :post, id: 'contact-form'  do %>
-    <div><%= label_tag :subject, t(:FORM_SUBJECT) %>
-    <%= text_field_tag :subject, params[:subject] %></div>
+  <%= raw negative_captcha(@captcha) %>
+  <div><%= negative_label_tag @captcha, :subject, t(:FORM_SUBJECT) %>
+  <%= negative_text_field_tag @captcha, :subject %></div>
 
-    <div><%= label_tag :email, t(:FORM_EMAIL), class: :required %>
-    <%= text_field_tag :email, params[:email], 'data-validation' => 'validate_email' %>
+  <div><%= negative_label_tag @captcha, :email, t(:FORM_EMAIL), class: :required %>
+  <%= negative_text_field_tag @captcha, :email, 'data-validation' => 'validate_email' %>
 </div>
-    <div><%= label_tag :message, t(:FORM_MESSAGE), class: :required %>
-    <%= text_area_tag :message, params[:message], 'data-validation' => 'required' %></div>
+  <div><%= negative_label_tag @captcha, :message, t(:FORM_MESSAGE), class: :required %>
+  <%= negative_text_area_tag @captcha, :message, 'data-validation' => 'required' %></div>
 
-    <%= submit_tag t(:SEND_MESSAGE_BUTTON) %>
+  <%= submit_tag t(:SEND_MESSAGE_BUTTON) %>
 <% end %>
